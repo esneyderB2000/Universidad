@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>YouTube - Esneyder</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+    <main class="contenedor active" id="contenedor">
+        <header class="header">
+            <section class="contenedor-logo">
+                <button id="boton-menu" class="boton-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="https://www.youtube.com" class="logo" target="_blank"><i class="fas fa-play"></i>
+                    <span>YouTube</span></a>
+            </section>
+
+            <section class="barra-busqueda">
+                <input type="text" placeholder="Buscar" />
+                <button type="button" onclick="mostrarAlerta()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </section>
+
+            <section class="botones-header">
+                <button><i class="fas fa-upload"></i></button>
+                <button><i class="fas fa-th"></i></button>
+                <button><i class="fas fa-bell"></i></button>
+                <a href="https://www.youtube.com/channel/UCP1NFlG5L0b35cpaXzutO7w" class="avatar" target="_blank"><img
+                        src="Imagen-Perfil/unnamed.jpg" alt="logoPerfil" /></a>
+            </section>
+        </header>
+
+        <aside class="menu-lateral">
+            <a href="#" class="active" onclick="reiniciarPagina()"><i class="fas fa-home"></i> Inicio</a>
+            <a href="https://www.youtube.com/feed/trending?bp=6gQJRkVleHBsb3Jl" target="_blank"><i
+                    class="fas fa-fire"></i> Tendencias</a>
+            <a href="#" target="_blank"><i class="fas fa-star"></i> Suscripciones</a>
+
+            <hr />
+
+            <a href="https://www.youtube.com/channel/UCP1NFlG5L0b35cpaXzutO7w" target="_blank"><i
+                    class="fas fa-folder"></i> Tu canal</a>
+            <a href="https://www.youtube.com/feed/history" class="active1" target="_blank"><i class="fas fa-folder"></i>
+                Historial</a>
+            <a href="https://www.youtube.com/playlist?list=WL" target="_blank"><i class="fas fa-folder"></i> Ver Más
+                Tarde</a>
+
+            <hr />
+
+            <a href="https://www.youtube.com/premium" target="_blank"><i class="fas fa-folder"></i> Youtube Premium</a>
+            <a href="https://www.youtube.com/music" target="_blank"><i class="fas fa-folder"></i> Youtube Music</a>
+            <a href="https://www.youtube.com/kids" target="_blank"><i class="fas fa-folder"></i> Youtube Kids</a>
+        </aside>
+
+        <section class="main">
+            <h3 class="titulo">Videos Recomendados</h3>
+            <article>
+                <a href="#" class="video"><iframe src="https://www.youtube.com/embed/kN1XP-Bef7w?si=zJ1LDZTnPZb822N6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+                <a href="#" class="video"><iframe src="https://www.youtube.com/embed/OWKXEJN67FE?si=EgATDmrkeNDggNNP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+                <a href="#" class="video"><iframe src="https://www.youtube.com/embed/z95mZVUcJ-E?si=n7qAK3dcq-ANvY0B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+                <a href="#" class="video"><iframe src="https://www.youtube.com/embed/xOinGb2MZSk?si=1VVUumUCss2XUGWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+                <a href="#" class="video"><iframe src="https://www.youtube.com/embed/xOinGb2MZSk?si=m2e-YxyHPsNH-Ig5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+                <a href="#" class="video"><iframe src="https://www.youtube.com/embed/XqFR2lqBYPs?si=kurWe5wSC3UTR7ko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+                <a href="#" class="video"><iframe src="https://www.youtube.com/embed/iG2jotQo9NI?si=mah71pw3WV7suuAH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+                <a href="#" class="video"><iframe src="https://www.youtube.com/embed/CK5ZcKZsMRs?si=3RR18HXZWrdkiWmH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+                <a href="#" class="video"><iframe src="https://www.youtube.com/embed/hWglK8nWh60?si=Kkkl9uTo_h3NX_QL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+            </article>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/6772ed4f1b.js" crossorigin="anonymous"></script>
+
+    <script>
+        function mostrarAlerta() {
+            alert("Realizando Busqueda...");
+            location.reload();
+        }
+        function reiniciarPagina() {
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>
